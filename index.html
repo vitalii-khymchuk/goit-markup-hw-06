@@ -48,7 +48,7 @@
         <!-- преимущества -->
         <section class="advantages section-padding">
          <div class="container">
-            <h2 class="hidden-title">Преимущества</h2>
+            <h2 class="hidden">Преимущества</h2>
             <ul class="advantages-list list">
                 <li class="advantages-item">
                     <div class="advantages-svg-wrapper">
@@ -342,7 +342,7 @@
             </address>
             </div>
             <div class="footer-second-flex">
-            <h2 class="footer-communities-header">ПРИСОЕДИНЯЙТЕСЬ</h2>
+            <b class="footer-communities-header">ПРИСОЕДИНЯЙТЕСЬ</b>
             <ul class="communities-list list">
                         <li class="communities-item">
                             <a href="" class="link communities-link">
@@ -374,6 +374,23 @@
                         </li>
                     </ul>
             </div>
+            <div class="footer-third-flex">
+                <b class="footer-email-header">Подпишитесь на рассылку</b>
+                <div class="subscribe-block">
+                    <form class="email-form">
+                        <label class="email-field">
+                            <input type="email" name="user-email" class="email-input" placeholder=" ">
+                            <span class="email-form-label">E-mail</span>
+                        </label>
+                    </form>
+                    <button type="submit" class="subscribe-button">
+                        <span class="subscribe-button-text">Подписаться</span>
+                        <svg width="24" height="24" class="icon-send">
+                            <use href="./symbol-defs.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
             </div>
     </footer>
     <div data-modal class="backdrop is-hidden">
@@ -381,6 +398,45 @@
             <button type="button" data-modal-close class="close-button"><svg width="18" height="18">
             <use href="./symbol-defs.svg#icon-close"></use>
         </svg></button>
+        <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
+        <form>
+        <label class="form-field">
+            <span class="form-label">Имя</span>
+                <input name="form-user-name" type="text" class="form-input">
+                      <span class="input-icon">
+                        <svg width="18" height="18">
+                          <use href="./symbol-defs.svg#icon-person"></use>
+                </svg>
+            </span>
+        </label>
+        <label class="form-field">
+            <span class="form-label">Телефон</span>
+                <input name="form-telephone" type="tel" class="form-input">
+                  <span class="input-icon">
+                        <svg width="18" height="18">
+                          <use href="./symbol-defs.svg#icon-telephone"></use>
+                </svg>
+            </span>
+        </label>
+        <label class="form-field">
+            <span class="form-label">Почта</span>
+                <input name="form-email" type="email" class="form-input">
+                  <span class="input-icon">
+                        <svg width="18" height="18">
+                          <use href="./symbol-defs.svg#icon-email"></use>
+                </svg>
+            </span>
+        </label>
+        <label class="form-field">
+            <span class="form-label">Комментарий</span>
+            <textarea name="form-comment"  class="form-input form-input-area" placeholder="Введите текст"></textarea>
+        </label>
+        <label class="form-field checkbox-form-field">
+            <input name="form-terms" type="checkbox" class="checkbox-input hidden" value="true">
+            <span class="checkbox-label">Соглашаюсь с рассылкой и принимаю <a class="link" href="">Условия договора</a></span>
+            <span class="checkbox-icon"></span>
+        </label>
+        </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
