@@ -266,6 +266,8 @@ body {
   background-color: var(--secondary-main-color);
   color: var(--secondary-main-color);
   background-color: #188ce8;
+   box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+    0px 3px 1px 0px #0000001a;
 }
 
 /* ПРЕИМУЩЕСТВА */
@@ -769,11 +771,6 @@ body {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-button:hover,
-.close-button:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 .modal-window {
   position: absolute;
   top: 50%;
@@ -785,6 +782,13 @@ body {
   padding: 40px;
 
   background-color: var(--secondary-main-color);
+  border-radius: 4px;
+box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+
+box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+
+box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -816,6 +820,11 @@ body {
 
   background-color: var(--secondary-main-color);
   transition: var(--typical-transition);
+}
+
+.close-button:hover,
+.close-button:focus {
+  background-color: #2196F3;
 }
 
 .modal-window .modal-text {
@@ -887,6 +896,7 @@ body {
 .modal-window .checkbox-form-field {
   margin-left: 13px; 
   position: relative;
+  margin-bottom: var(--typical-margine);
   
   display: flex;
   align-items: center;
@@ -926,4 +936,24 @@ position: absolute;
   background-image: url(../images/images-main-page/icon-check.svg);
  background-repeat: no-repeat;
  background-position: center;
+}
+
+.submit-button-modal {
+  display: block;
+  margin: 0 auto;
+
+  width: 200px;
+  height: 50px;
+
+  background-color: var(--accent-color);
+  font-size: 16px;
+ line-height: 1.88;
+ letter-spacing: 0.06em;
+ color: #FFFFFF;
+}
+
+.submit-button-modal:hover, .submit-button-modal:focus {
+  background-color: #188ce8;
+ box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+    0px 3px 1px 0px #0000001a;
 }
