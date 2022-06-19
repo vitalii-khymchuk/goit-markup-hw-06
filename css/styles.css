@@ -571,12 +571,9 @@ body {
   width: 570px;
 }
 
-.subscribe-block {
-  display: flex;
-  align-items: flex-end;
-}
-
 .footer-third-flex .email-form {
+   display: flex;
+  align-items: flex-end;
   margin-top: 20px;
 }
 
